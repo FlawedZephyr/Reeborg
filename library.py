@@ -1,4 +1,4 @@
-from REEBORG import *
+
 def walk(distance=-1, actions=[]):
     while distance != 0 and front_is_clear():
         move(); distance -= 1
@@ -6,13 +6,6 @@ def walk(distance=-1, actions=[]):
         for action in actions:
             act, params = action; act(*params)
 
-'''                     
-def turn_right():
-     [turn_left() for _ in range(3)]
-        
-def turn_around():
-    [turn_left() for _ in range(2)]
-'''
 turn_right = lambda: [turn_left() for _ in range(3)]
 turn_around = lambda: [turn_left() for _ in range(2)]
 
