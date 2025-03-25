@@ -6,9 +6,6 @@
 #  ⤷ steps: 1 - 20
 
 #####################################
-from REEBORG import *
-
-
 ## basic code for all levels
 from library import *
 think(0)
